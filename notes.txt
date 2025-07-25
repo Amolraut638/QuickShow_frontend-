@@ -1,0 +1,80 @@
+created folder 
+installed dependencies, lucid react is used for icons
+added assests into folder
+createdd folder structure: added pages, components, lib folders in src
+created the different pages in the pages folder for normal user: Favorite, Home, MovieDetails, Movies, MyBookings, SeatLayout
+Now created the components: navbar, footer
+footer and navbar displayed in all pages so it is created in components
+other pages have different routes so we create routing so that we can navigate on different pages 
+in main.jsx imported browserRouter and instred of strictmode we used this browserRouter
+in app.jsx instead of div tag we return fragment and add the navbar so that when we load the webpage the navbar is loaded   
+created the routes for home page in the app.jsx and for other pages also
+to use the notification we mount the Toaster component in the app.jsx so that we use the notification in any component
+added tailwindcss to the client folder
+added google fonts and set the theme in index.css
+now we create Navbar
+
+#NAVBAR
+When we click on the logo then it will redirect us to home page thats why we used the Link Tag there
+for mobile menu links we have to create the states so before return statement we created the set [isOpen, SetIsOpen]
+added onclick property in the cross icon
+
+now we have to add the login functionaloty for that we use clerk for authentication
+set all the clerk functionality. useUser imported from clerk in the navbar
+in login button used the ternary operator to display user profile when user is logged in and added the onclick property 
+added multisession functionality in this clerk
+done creating the navbar    
+
+#HEROSECTION
+created hero section and mouted it in Home.jsx
+added navigate function on the Explore movies button
+
+created featureSection.jsx in components folder
+created BlurCircle component in components folder 
+in featureSection the BlurCircle component in added 
+created the movieCard.jsx in components folder and mounted it in featureSection 
+to convert the time in specific format we create a function in lib and added this function in the movieCard at the movie time section 
+now we have to create the trailers section
+created trailerSection in that ReactPlayer is used to display the trailers then this component is mounted in home.jsx
+created footer from prebuiltUi.com, make the neccesasry changes in that
+home page is completed, now the movies page is to be created 
+after that the Favorite page is created 
+now MovieDetails page is to create in this we need movie id to display movie data we will get the id from URL to get this we use useparams
+added favorite cast on the MovieDetails page
+then created the DateSeclect component for selecting the date to book the show and mounted iin the MovieDetails component
+now we have to add the click functionality in the date component so we make some state variables
+to add the smooth scroll when click on the book ticket button in index.html we add class smooth scroll
+now we have to display recommanded movies   
+created loading component and mounted it on movieDetails page
+created the SeatLayout component added the available time functionality and now added the select time functionality
+added all the rows in this seat layout
+user pages are completed
+Now we have to create the pages for admin
+created empty pages for admin and now we have to create route for these pages in App.jsx
+after creating routes now lets make a folder for admin components
+created navbar and sidebar components for admin and added it into the layout
+we have used the same type of text in the admin pages at the top so instead of rewriting the code for this we create a separate component for it
+in pages folder created new folder for admin and creatd pages for admin
+created the routes in App.jsx for admin pages
+written dashboad, list shows, list booking pages
+now write the addShows component in that we reques the votecount in k so we created the KConverter function in the lib
+now we have to add the click functionality in this component on the movie card so that selected movies can added to the selectedMovies state
+completed all the admin and user pages 
+frontend done.
+
+
+backend started
+created server folder. in that folder created the server.js file 
+run the command npm init -y and then in package.json added the type = module so that we can use the import statements in backend
+installing dependencies for backend like expess, mongoose connect backend with mongoDB database, cors allows backend with frontend url, dotenv to use the env variables, axios to make api calls, cloudinary for using cloud storage 
+then we install- npm install nodemon --save-dev 
+now in the server.js we create the backend server using express
+then created the fist API in the server.js which is home api route
+to automatically restart the server when we make some changes in the code then we use the nodemon server we added this in the package.json
+created the clustor on mongoDB atlas
+added the connection link in .env file
+now created the config folder and db.js file in that to connect with the database 
+now we have to store the data on the database and for that we have to create models 
+we have created the userSchema so that the users data can be stores in the database but we get the user data from the clerk
+to get the data from clerk we have to setup the clerk for backend
+first we have to setup the inngest and connect this inngest with clerk
