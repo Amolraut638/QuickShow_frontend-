@@ -1,1 +1,1 @@
-Frontend Completed, Backend is in making
+Frontend is complete; backend development is underway.
