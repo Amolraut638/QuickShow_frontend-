@@ -1,75 +1,98 @@
-QuickShow — Frontend
+🎬 QuickShow
 
-A Movie Ticket Booking Website (Frontend Only) built with React + Vite + Tailwind CSS + Clerk Authentication.
-This repository contains only the frontend part of the project.
+QuickShow is a frontend movie ticket booking web application developed using React, Tailwind CSS, and Clerk authentication.
+It provides an intuitive interface for users to browse movies, book tickets, and manage their profiles with secure authentication.
 
-Features
+✨ Features
 
-Authentication with Clerk (Email, Phone, Social logins, Multi-session support)
+User Authentication with Clerk: Supports email, phone, and social logins with multi-session support.
 
-Browse available movies
+Movie Listings: Browse movies and view details.
 
-Book tickets & select preferred seats (UI only)
+Seat Selection: Choose preferred seats while booking tickets.
 
-User profile & session switching with Clerk
+Ticket Booking UI: Interactive booking flow (frontend only).
 
-Fully responsive UI with TailwindCSS
+Responsive Design: Optimized for both desktop and mobile.
 
-Tech Stack
+🛠️ Technologies Used
+Frontend
 
-React (Vite) – frontend framework
+React.js (Vite) – For building the UI.
 
-Tailwind CSS – styling
+React Router – For navigation and routing.
 
-Clerk – authentication & session management
+Tailwind CSS – For responsive styling.
 
-React Router – navigation
+Clerk – Authentication and session management.
 
-```
-Folder Structure
-quickshow-frontend/
-├── public/               # Static assets
-├── src/
-│   ├── components/       # Navbar, SeatSelector, etc.
-│   ├── pages/            # Home, Movies, Booking
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── .env.example          # Example env file
-├── package.json
-├── tailwind.config.js
-└── README.md
+Note
 
-```
-Setup Instructions
+This repository contains only the frontend. Backend features like payment handling, seat reservation logic, and email jobs (Inngest) are not included here.
 
-Clone the repo
+🚀 Getting Started
+Prerequisites
 
-git clone https://github.com/<your-username>/quickshow-frontend.git
-cd quickshow-frontend
+Node.js and npm installed on your system.
+
+A Clerk account for authentication keys.
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/Amolraut638/QuickShow-Frontend.git
+cd QuickShow-Frontend
 
 
-Install dependencies
+Install dependencies:
 
 npm install
 
 
-Configure Clerk
+Setup environment variables:
+Create a .env file in the root directory and add your Clerk publishable key:
 
-Create a Clerk project at clerk.com
+VITE_CLERK_PUBLISHABLE_KEY=pk_test_XXXXXXXXXXXXXXXXXXXXXXXX
 
-Copy the Publishable Key
+Running the Application
 
-Create a .env file in root:
-
-VITE_CLERK_PUBLISHABLE_KEY=pk_test_XXXXXXXXXXXXXXXX
-
-
-Run locally
+Start the development server:
 
 npm run dev
 
-Deployment
 
-You can deploy easily on Vercel, Netlify, or any static hosting provider.
-Make sure to add your Clerk environment variable in project settings.
+The app will run at http://localhost:5173/ (default Vite port).
+
+📂 Project Structure
+QuickShow-Frontend/
+├── public/              # Static assets
+├── src/
+│   ├── components/      # Navbar, SeatSelector, etc.
+│   ├── pages/           # Home, Movies, Booking
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .env.example         # Example environment variables
+├── package.json
+├── tailwind.config.js
+└── README.md
+
+🌍 Deployment
+
+Easily deploy on Vercel, Netlify, or other static hosting services.
+👉 Don’t forget to configure your Clerk Publishable Key in the hosting environment variables.
+
+📸 Live Demo
+
+Deployment link coming soon...
+
+📬 Reach Out to Me
+
+Feel free to connect with me:
+
+📧 Email: amolraut1902@gmail.com
+
+🔗 LinkedIn: linkedin.com/in/amolraut9272
+
+💬 Let’s collaborate and build something great!
